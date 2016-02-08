@@ -2,6 +2,8 @@
 
 An illustration demonstrating the use of Reactive Extensions in Xamarin.Forms.
 
+In this illustration, an image of a clock second-hand is rotated every second, with the Rotation property of the Image in Xaml, bound to a property in the ViewModel. The property in the ViewModel is updated every second, using Rx.
+
 Install the following from Nuget:
 
 Rx-Core
