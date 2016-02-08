@@ -1,6 +1,11 @@
-# ReactiveExtensionsPOC
+# Reactive Extensions in Xamarin.Forms
 Binding in the Xaml to a property in the ViewModel that is updated by a Reactive Extension Observable causes a second hand jpg to rotate, second by second.
 
+Install the following from Nuget:
+
+Rx-Core
+Rx-Interfaces
+Rx-Linq
 
 In the Xaml:
 
