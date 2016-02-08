@@ -64,3 +64,7 @@ The View Model is as follows:
                 this.Rotation = (Convert.ToInt32(num) * (360/60));
             });
         }
+
+Here, the Interval property returns a long every TimeSpan period that is passes into it - in this case, 1 second.
+
+Subscribing to the resulting observable initiates the process, and every second the long result of the Interval is passed and then assigned to the ViewModel property that the image is bound to. 
