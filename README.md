@@ -1,6 +1,8 @@
 # Reactive Extensions in Xamarin.Forms
 
-An illustration demonstrating the use of Reactive Extensions in Xamarin.Forms.
+An illustration demonstrating the use of Reactive Extensions in Xamarin.Forms. 
+
+(For expedience, SmallestMvvm is used to inject the ViewModel into the page, however any alternate method could be used.)
 
 In this illustration, an image of a clock second-hand is rotated (360 degrees / 60 seconds) every second, with the Rotation property of the Image in Xaml, bound to a property in the ViewModel. The property in the ViewModel is updated every second, using Rx.
 
@@ -10,9 +12,7 @@ Rx-Core
 Rx-Interfaces
 Rx-Linq
 
-Binding in the Xaml to a property in the ViewModel that is updated by a Reactive Extension Observable causes a second hand jpg to rotate, second by second.
-
-In the Xaml:
+The binding in the Xaml is as follows:
 
 ```
   <Grid>
@@ -35,7 +35,7 @@ In the Xaml:
   </Grid>
 ```
 
-In the View Model:
+The View Model is as follows:
 
     public class MainPageViewModel : ViewModelBase
     {
